@@ -15,16 +15,6 @@ class CardCollection
         $this->totalRate += $card->getRate();
     }
 
-    public function getTotalRate()
-    {
-        return $this->totalRate;
-    }
-
-    public function getCardCount()
-    {
-        return count($this->cards);
-    }
-
     public function isEmpty()
     {
         return empty($this->cards);
@@ -57,5 +47,20 @@ class CardCollection
         }
 
         return null;
+    }
+
+    public function getCards()
+    {
+        return $this->cards;
+    }
+
+    public function getTotalRate()
+    {
+        return $this->totalRate;
+    }
+
+    public function getCardCount()
+    {
+        return count($this->cards);
     }
 }
