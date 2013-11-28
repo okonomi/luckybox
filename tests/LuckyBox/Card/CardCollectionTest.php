@@ -16,7 +16,7 @@ class CardCollectionTest extends \PHPUnit_Framework_TestCase
 
     public function testGetTotalRate_oneCard()
     {
-        $card = $this->getMock('LuckyBox\\Card\\Card');
+        $card = $this->getMock('LuckyBox\Card\Card');
         $card->expects($this->any())
             ->method('getRate')
             ->will($this->returnValue(1));
@@ -31,7 +31,7 @@ class CardCollectionTest extends \PHPUnit_Framework_TestCase
         $collection = new CardCollection();
         $this->assertEquals(0, $collection->getCardCount());
 
-        $card = $this->getMock('LuckyBox\\Card\\Card');
+        $card = $this->getMock('LuckyBox\Card\Card');
         $card->expects($this->any())
             ->method('getRate')
             ->will($this->returnValue(1));
@@ -45,7 +45,7 @@ class CardCollectionTest extends \PHPUnit_Framework_TestCase
         $collection = new CardCollection();
         $this->assertTrue($collection->isEmpty());
 
-        $card = $this->getMock('LuckyBox\\Card\\Card');
+        $card = $this->getMock('LuckyBox\Card\Card');
         $card->expects($this->any())
             ->method('getRate')
             ->will($this->returnValue(1));
@@ -94,13 +94,13 @@ class CardCollectionTest extends \PHPUnit_Framework_TestCase
     {
         $collection = new CardCollection();
 
-        $card1 = $this->getMock('LuckyBox\\Card\\Card');
+        $card1 = $this->getMock('LuckyBox\Card\Card');
         $card1->expects($this->any())
             ->method('getRate')
             ->will($this->returnValue(1));
         $collection->add($card1);
 
-        $card2 = $this->getMock('LuckyBox\\Card\\Card');
+        $card2 = $this->getMock('LuckyBox\Card\Card');
         $card2->expects($this->any())
             ->method('getRate')
             ->will($this->returnValue(2));

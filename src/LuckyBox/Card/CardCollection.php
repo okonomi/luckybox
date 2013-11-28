@@ -4,6 +4,7 @@ namespace LuckyBox\Card;
 
 class CardCollection
 {
+
     private $totalRate = 0;
 
     /** @var Card[] */
@@ -63,4 +64,5 @@ class CardCollection
     {
         return count($this->cards);
     }
+
 }
