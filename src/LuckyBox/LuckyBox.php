@@ -16,6 +16,9 @@ class LuckyBox
 
     private $consumable = false;
 
+    /**
+     * @param CardCollection $cardCollection
+     */
     public function __construct(CardCollection $cardCollection = null)
     {
         if (is_null($cardCollection)) {
